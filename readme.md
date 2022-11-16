@@ -6,19 +6,19 @@ docker run --name waiter -p 27017:27017 -d mongo
 
 # ToDo Check
 
-[] List categories
+- [] List categories
 
-[] Create category
+- [] Create category
 
-[] List products
+- [] List products
 
-[] Create product
+- [] Create product
 
-[] Get products by category
+- [] Get products by category
 
-[] List orders
+- [] List orders
 
-[] Create order
+- [] Create order
 
-[] Change order status
+- [] Change order status
 
