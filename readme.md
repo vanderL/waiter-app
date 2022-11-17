@@ -10,9 +10,9 @@ docker run --name waiter -p 27017:27017 -d mongo
 
 - [x] Create category
 
-- [ ] List products
+- [x] List products
 
-- [ ] Create product
+- [x] Create product
 
 - [ ] Get products by category
 
