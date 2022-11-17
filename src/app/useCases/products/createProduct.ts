@@ -7,7 +7,7 @@ export async function createProduct(req: Request, res: Response) {
     const imagePath = req.file?.filename;
     const { name, description, price, category, ingredients } = req.body;
 
-    const ingredientsParse = JSON.parse(ingredients);
+    const ingredientsParse = ingredients ? JSON.parse(ingredients) : [];
 
     const product = await Product.create({
       name,
@@ -15,7 +15,7 @@ export async function createProduct(req: Request, res: Response) {
       price: Number(price),
       category,
       imagePath,
-      ingredients: ingredientsParse
+      ingredients: ingredientsParse,
     });
 
     return res.status(201).json(product);
