@@ -1,5 +1,5 @@
 import { Order } from '../../types/Order';
-import { OrdersBoard } from './OrdersBoard';
+import { OrdersBoard } from '../OrdersBoard';
 import * as Sc from './styles';
 
 const orders: Order[] = [

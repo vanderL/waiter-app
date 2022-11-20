@@ -10,13 +10,13 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-header {
-  padding: 8px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+  > header {
+    padding: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 `;
 
 export const OrdersContainer = styled.div`
