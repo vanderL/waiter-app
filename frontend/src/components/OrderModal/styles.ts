@@ -97,6 +97,19 @@ export const OrderDetails = styled.div`
       }
     }
   }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+    span {
+      font-weight: 500px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  }
 `;
 
 
