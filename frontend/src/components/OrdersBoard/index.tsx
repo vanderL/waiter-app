@@ -14,8 +14,13 @@ export function OrdersBoard({ title, icon, orders }: OrdersBoardProps) {
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
 
   function handleOpenModal(order: Order) {
-    setIsModalVisible(!isModalVisible);
+    setIsModalVisible(true);
     setSelectedOrder(order);
+  }
+
+  function handleCloseModal() {
+    setIsModalVisible(false);
+    setSelectedOrder(null);
   }
 
   return (
@@ -40,6 +45,7 @@ export function OrdersBoard({ title, icon, orders }: OrdersBoardProps) {
       <OrderModal
         visible={isModalVisible}
         order={selectedOrder}
+        onClose={handleCloseModal}
       />
     </Sc.Board>
   );
