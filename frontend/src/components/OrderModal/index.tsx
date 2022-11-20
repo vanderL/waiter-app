@@ -73,6 +73,17 @@ export function OrderModal({ visible, order }: OrderModalProps) {
             <strong>{formatCurrency(total)}</strong>
           </div>
         </Sc.OrderDetails>
+
+        <Sc.Actions>
+          <button type="button" className='primary'>
+            <span>👩‍🍳</span>
+            <strong>Iniciar Produção</strong>
+          </button>
+
+          <button type="button" className='secondary'>
+            <strong>Cancelar pedido</strong>
+          </button>
+        </Sc.Actions>
       </Sc.ModalBody>
     </Sc.Overlay>
   );
